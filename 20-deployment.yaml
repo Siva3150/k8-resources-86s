@@ -11,8 +11,8 @@ spec:
  selector: 
 # these labels are used to select pods
   matchLabels: 
-  purpose: deployment-demo
-  project: roboshop
+   purpose: deployment-demo
+   project: roboshop
 # pod definition
  tempalte: 
   metadata: 
