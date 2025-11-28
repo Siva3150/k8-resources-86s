@@ -3,10 +3,10 @@ kind: Pod
 metadata: 
  name: service-demo 
  # These labels are used to register this pod with service
-  labels:
-   project: roboshop
-   environment: dev 
-   component: frontend
+ labels:
+  project: roboshop
+  environment: dev 
+   omponent: frontend
 spec: 
  containers:
   - name: nginx 
