@@ -12,5 +12,5 @@ spec:
  ports: 
   - protocol: TCP
     port: 80 # node port
-    tagretPort: 80 # container port 
+    targetPort: 80 # container port 
   
