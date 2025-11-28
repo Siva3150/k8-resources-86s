@@ -14,7 +14,7 @@ spec:
    purpose: deployment-demo
    project: roboshop
 # pod definition
- tempalte: 
+ template: 
   metadata: 
    labels: 
     purpose: deployment-demo
