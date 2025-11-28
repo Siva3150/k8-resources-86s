@@ -1,0 +1,15 @@
+apiVersion: v1 
+Kind: Pod 
+metadata: 
+ name: service-lb-demo 
+# These labels are used to register this pod with service
+ labels:
+   project: roboshop
+   environment: dev 
+   component: frontend
+   purpose: load-balancer 
+spec: 
+ containers: 
+  - name: nginx 
+    image: nginx  
+  
