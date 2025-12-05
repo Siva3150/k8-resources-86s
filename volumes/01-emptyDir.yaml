@@ -5,18 +5,18 @@ metadata:
  namespace: default 
 spec: 
  containers: 
- - name: nginx 
-   image: nginx 
-   volumeMounts:
-   - mountPath: /var/log/nginx 
-     subPath: nginx-logs
- - name: almalinux 
-   image: almalinux:9
-   command: ["sleep", "1000"]
-   volumeMounts:
-   - mountPath: /var/log/nginx 
-     subPath: nginx-logs 
-     readOnly: true 
+  - name: nginx 
+    image: nginx 
+    volumeMounts:
+    - mountPath: /var/log/nginx 
+      subPath: nginx-logs
+  - name: almalinux 
+    image: almalinux:9
+    command: ["sleep", "1000"]
+    volumeMounts:
+    - mountPath: /var/log/nginx 
+      subPath: nginx-logs 
+      readOnly: true 
  
  volumes: 
  - name: nginx-logs 
